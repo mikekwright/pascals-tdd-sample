@@ -7,6 +7,17 @@ The videos created for this project have been uploaded to YouTube and the link i
 
 Youtube Link: 
 
+Branches
+------------------------
+
+If you follow along with the tutorial, I have created a few branches that have the completed code up until the next point, so you can follow along.  
+
+* Clean Slate - master  
+* Part 1 - end-part-one  
+* Part 2 - end-part-two  
+* Part 3 - end-part-three  
+
+(I know I made it hard)  
 
 Tools
 ------------------------
