@@ -4,7 +4,7 @@ using PascalsTriangle.Implementations;
 
 namespace PascalsTriangle
 {
-  class Program
+  public class Program
   {
     static int Main(string[] args)
     {
@@ -16,7 +16,23 @@ namespace PascalsTriangle
 
     public static int RunProgram(IInputOutput io, ITriangleCalculator triangleCalculator)
     {
-      throw new NotImplementedException();
+      string input = io.ReadLine();
+      int convertedNumber;
+      if (!int.TryParse(input, out convertedNumber))
+      {
+        return 1;
+      }
+
+      try
+      {
+        triangleCalculator.PrintTriangle(convertedNumber);
+      }
+      catch (Exception)
+      {
+        return 1;
+      }
+
+      return 0;
     }
   }
 }
