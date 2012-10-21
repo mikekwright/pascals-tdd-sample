@@ -5,7 +5,7 @@ This project was created to hopefully give my students a guide they could reuse 
 
 The videos created for this project have been uploaded to YouTube and the link is defined below.   
 
-* Youtube Link:  
+* Youtube Link: [TDD Tutorial](http://www.youtube.com/playlist?list=PLCNNz4pUPVYE0s7_TwVpBW44GuD0GZOvO)  
 * Pascal's Triangle: [Wikipedia](http://en.wikipedia.org/wiki/Pascal%27s_triangle)  
 
 Branches
