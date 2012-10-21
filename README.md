@@ -5,7 +5,8 @@ This project was created to hopefully give my students a guide they could reuse 
 
 The videos created for this project have been uploaded to YouTube and the link is defined below.   
 
-Youtube Link: 
+* Youtube Link:  
+* Pascal's Triangle: [Wikipedia](http://en.wikipedia.org/wiki/Pascal%27s_triangle)  
 
 Branches
 ------------------------
@@ -24,7 +25,7 @@ Tools
 
 On this video I am using the below fantastic tools, in helping me to complete TDD development in Visual Studio.  
 
-* RhinoMocks mocking framework
-* Nunit testing framework
-* Jetbrains ReSharper (a fantastic tool for refactoring and general code development). 
+* [RhinoMocks mocking framework](https://github.com/hibernating-rhinos/rhino-mocks)  
+* [Nunit testing framework](http://www.nunit.org/)  
+* [Jetbrains ReSharper](http://www.jetbrains.com/resharper/) (a fantastic tool for refactoring and general code development). 
 
