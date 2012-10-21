@@ -16,10 +16,12 @@ namespace PascalsTriangle
 
     public static int RunProgram(IInputOutput io, ITriangleCalculator triangleCalculator)
     {
+      io.Write("Enter the number of rows to print: ");
       string input = io.ReadLine();
       int convertedNumber;
       if (!int.TryParse(input, out convertedNumber))
       {
+        io.WriteLine("Sorry, '{0}' is not a valid number.", input);
         return 1;
       }
 
@@ -27,8 +29,9 @@ namespace PascalsTriangle
       {
         triangleCalculator.PrintTriangle(convertedNumber);
       }
-      catch (Exception)
+      catch (Exception e)
       {
+        io.WriteLine("Error running program: {0}", e.Message);
         return 1;
       }
 

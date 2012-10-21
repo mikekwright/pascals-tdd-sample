@@ -23,45 +23,65 @@ namespace PascalsTriangle.Tests
     [ExpectedException(typeof(ArgumentOutOfRangeException))]
     public void GetValueAt_ShouldThrowArgumentOutOfRangeException_WhenRowIsNegative()
     {
-      Assert.Fail("Not Implemented");
+      _testCalculator.GetValueAt(-1, Arg<int>.Is.Anything);
     }
 
     [Test]
     [ExpectedException(typeof(ArgumentOutOfRangeException))]
     public void GetValueAt_ShouldThrowArgumentOutOfRangeException_WhenColumnIsNegative()
     {
-      Assert.Fail("Not Implemented");
+      _testCalculator.GetValueAt(Arg<int>.Is.Anything, -1);
     }
 
     [Test]
     [ExpectedException(typeof(ArgumentOutOfRangeException))]
     public void GetValueAt_ShouldThrowArgumentOutOfRangeException_WhenColumnIsGreaterThenRow()
     {
-      Assert.Fail("Not Implemented");
+      int row = 1;
+      _testCalculator.GetValueAt(row, row + 1);
     }
 
     [Test]
     public void GetValueAt_ShouldReturnOne_WhenColumnIsZeroAndRowIsZero()
     {
-      Assert.Fail("Not Implemented");
+      const int EXPECTED = 1;
+
+      int actual = _testCalculator.GetValueAt(0, 0);
+
+      Assert.AreEqual(EXPECTED, actual, "Row 0, Col 0 should result in 1.");
     }
 
     [Test]
     public void GetValueAt_ShouldReturnOne_WhenColumnIsSameValueAsRow()
     {
-      Assert.Fail("Not Implemented");
+      const int EXPECTED = 1;
+
+      const int ROW = 2;
+      int actual = _testCalculator.GetValueAt(ROW, ROW);
+
+      Assert.AreEqual(EXPECTED, actual, "Value for Row and Column being the same is 1");
     }
 
     [Test]
     public void GetValueAt_ShouldReturnOne_WhenColumnIsZero()
     {
-      Assert.Fail("Not Implemented");
+      const int EXPECTED = 1;
+
+      int actual = _testCalculator.GetValueAt(2, 0);
+
+      Assert.AreEqual(EXPECTED, actual, "Value should be one when column is zero");
     }
 
     [Test]
     public void GetValueAt_ShouldReturnThree_WhenColumnIsOneAndRowIsThree()
     {
-      Assert.Fail("Not Implemented");
+      const int EXPECTED = 3;
+      const int ROW = 3;
+      const int COLUMN = 1;
+
+      int actual = _testCalculator.GetValueAt(ROW, COLUMN);
+
+      Assert.AreEqual(EXPECTED, actual, "The value for Row 3, Col 1 should be 3");
     }
 
     [Test]
