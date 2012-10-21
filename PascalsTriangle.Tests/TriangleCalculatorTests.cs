@@ -87,14 +87,18 @@ namespace PascalsTriangle.Tests
     [Test]
     public void PrintTriangle_ShouldPrintRowOf_1_5_10_10_5_1_WhenRowIsFive()
     {
-      Assert.Fail("Not Implemented");
+      _mockInputOutput.Expect(x => x.WriteLine("1 5 10 10 5 1")).Repeat.AtLeastOnce();
+
+      _testCalculator.PrintTriangle(5);
+
+      _mockInputOutput.VerifyAllExpectations();
     }
 
     [Test]
     [ExpectedException(typeof(ArgumentOutOfRangeException))]
     public void PrintTriangle_ShouldThrowArgumentOutOfRangeException_WhenRowIsNegative()
     {
-      Assert.Fail("Not Implemented");
+      _testCalculator.PrintTriangle(-1);
     }
   }
 }
